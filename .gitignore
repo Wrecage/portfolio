@@ -1,0 +1,47 @@
+ 
+# Ignore the virtual environment folder
+venv/
+env/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Ignore environment variable files
+.env
+
+# Ignore compiled files
+*.o
+*.so
+*.dylib
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore logs
+*.log
+
+# Ignore coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# Ignore distribution and build directories
+build/
+dist/
+*.egg-info/
+.eggs/
+MANIFEST
+
+# Ignore static files for web frameworks
+staticfiles/
+media/

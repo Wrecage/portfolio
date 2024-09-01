@@ -3,7 +3,7 @@ import streamlit as st
 st.markdown(
     """
     <style>
-
+    
 
         /* Apply moving gradient to the entire background */
         html, body, [data-testid="stAppViewContainer"], .main {
@@ -12,7 +12,101 @@ st.markdown(
             background: linear-gradient(45deg, #234275, #172E52, #1B214E, #191A25);
             background-size: 400% 400%;
             animation: gradientBG 10s ease infinite;
+            
         }
+
+         p:nth-of-type(1) {
+            color: white !important; /* Custom color */
+            font-size: 1.2em !important; /* Custom font size */
+            text-align: justify; /* Justify the text */
+            margin-top: 10px; /* Add some margin at the top */
+            line-height: 1.5; /* Adjust line height for better readability */
+        }
+        
+       
+        h1:first-of-type {
+            color: white !important; /* Custom color */
+            font-size: 2.5em !important; /* Custom font size */
+            text-align: center; /* Center the text */
+            margin-top: 20px; /* Add some margin at the top */
+            text-shadow: 2px 2px 4px #000000; /* Add some shadow to the text */
+        }
+
+               
+        h2:first-of-type {
+            color: white !important; /* Custom color */
+            font-size: 2.5em !important; /* Custom font size */
+            text-align: center; /* Center the text */
+            margin-top: 20px; /* Add some margin at the top */
+            text-shadow: 2px 2px 4px #000000; /* Add some shadow to the text */
+        }
+
+  
+        hr {
+            border: 1px solid #FFFFFF !important; /* Custom color */
+            margin-top: 20px; /* Add some margin */
+            margin-bottom: 20px; /* Add some margin */
+        }
+        
+        p:nth-of-type(2), ul:nth-of-type(1) {
+            color: #FFFFFF !important; /* Custom color for text */
+            font-size: 1.2em !important; /* Custom font size */
+            text-align: left; /* Align text to the left */
+            margin-top: 10px; /* Add some margin at the top */
+            line-height: 1.5; /* Adjust line height for better readability */
+        }
+
+        h3:first-of-type {
+            color: #FFFFFF !important; /* Custom color */
+            font-size: 1.8em !important; /* Custom font size */
+            text-align: center; /* Center the text */
+            margin-top: 20px; /* Add some margin at the top */
+        }
+
+        div.stExpanderContent p:nth-of-type(1) {
+            color: #87CEFA !important; /* Custom color for text */
+            font-size: 1.1em !important; /* Custom font size */
+            margin-left: 20px; /* Indent text */
+            line-height: 1.6; /* Adjust line height for readability */
+        }
+
+        h3:nth-of-type(2), h3:nth-of-type(3) {
+            color: #FF4500 !important; /* Custom color */
+            font-size: 1.6em !important; /* Custom font size */
+            margin-top: 20px; /* Add some margin at the top */
+        }
+
+        h3:nth-of-type(4) {
+            color: #4682B4 !important; /* Custom color */
+            font-size: 1.6em !important; /* Custom font size */
+            margin-top: 20px; /* Add some margin at the top */
+            text-align: center; /* Center the text */
+        }
+
+        p:nth-of-type(3) {
+            color: #FFFFFF !important; /* Custom color */
+            font-size: 1.2em !important; /* Custom font size */
+            text-align: left; /* Align text to the left */
+            margin-top: 10px; /* Add some margin at the top */
+            line-height: 1.5; /* Adjust line height for better readability */
+        }
+
+        .streamlit-expanderHeader {
+            color: white !important; /* Change the header text color to white */
+        }
+        
+        .streamlit-expander {
+            border: 2px solid white !important; /* Change the border color to white */
+            border-radius: 10px !important; /* Rounded corners for the border */
+            margin-bottom: 15px; /* Add some margin below each expander */
+        }
+
+        div.streamlit-expanderContent p, div.streamlit-expanderContent {
+            color: white !important; /* Change the text color inside the expander to white */
+        }
+
+
+        
 
         @keyframes gradientBG {
             0% {
@@ -142,6 +236,18 @@ st.markdown(
             color: gold;
             text-decoration: none;
         }
+
+        .annotation {
+            background-color: dark gray;
+            color: white;
+            padding: 5px 5px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            text-align: center;
+            box-shadow: 2px 4px 6px rgba(1, 1, 1, 1.0);
+            margin: 20px 0;
+            border-left: 10px solid dark grey; /* Accent border */
+        }
     </style>
 
     <script>
@@ -169,14 +275,17 @@ st.markdown(
     """, unsafe_allow_html=True
 )
 
+
 st.markdown(
     """
     <div id="hero" class="hero-section fade-in">
         <div class="hero-title">Trisan Jae B. Españo</div>
         <div class="hero-subtitle">From Passion to Profession</div>
+        
     </div>
     """, unsafe_allow_html=True
 )
+st.markdown('<div class="annotation">Use dark mode for a better experience</div>', unsafe_allow_html=True)
 
 st.write('<div id="about" class="fade-in">', unsafe_allow_html=True)
 st.write("# About Me")

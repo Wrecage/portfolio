@@ -285,7 +285,6 @@ st.markdown(
     </div>
     """, unsafe_allow_html=True
 )
-st.markdown('<div class="annotation">Use dark mode for a better experience</div>', unsafe_allow_html=True)
 
 st.write('<div id="about" class="fade-in">', unsafe_allow_html=True)
 st.write("# About Me")
